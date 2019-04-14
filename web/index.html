@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Video-Stream</title>
+</head>
+<body>
+	<div id="workspace">
+		<button id="createRoom">Create Room</button>
+		<br> <label for="roomKey">Room key:</label> <input id="roomKey">
+		<label for="username">Username:</label> <input id="username">
+		<button id="joinRoom">Join Room</button>
+	</div>
+	<template id="streamerTemplate"> <span id="roomKey"></span>
+	<br>
+	<span id="joinded"></span>
+	<br>
+	<button id="startStream">Start Stream</button><br>
+	<button id="stopStream">Stop Stream</button>
+	</template>
+	<template id="receiverTemplate"> <video id="video"></video>
+	</template>
+	<script src="main.js"></script>
+</body>
+</html>
